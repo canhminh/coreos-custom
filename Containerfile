@@ -8,6 +8,9 @@ COPY veracrypt-fedora.rpm /tmp/veracrypt-fedora.rpm
 RUN rpm-ostree install \
     nfs-utils \
     fuse-libs \
+    firewalld \
+    rclone \
+    tailscale \
     qemu-guest-agent \
     /tmp/veracrypt-fedora.rpm \
     && \
